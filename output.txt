@@ -1,0 +1,150 @@
+SSID 1 : MEO-46A830
+    Network type            : Infrastructure
+    Authentication          : WPA2-Personal
+    Encryption              : CCMP 
+    BSSID 1                 : 00:06:91:46:a8:31
+         Signal             : 29%  
+         Radio type         : 802.11ac
+         Channel            : 108 
+         Basic rates (Mbps) : 6 12 24
+         Other rates (Mbps) : 9 18 36 48 54
+    BSSID 2                 : 00:06:91:46:a8:30
+         Signal             : 35%  
+         Radio type         : 802.11n
+         Channel            : 6 
+         Basic rates (Mbps) : 1 2 5.5 11
+         Other rates (Mbps) : 6 9 12 18 24 36 48 54
+
+SSID 2 : NOS-AFFE-5
+    Network type            : Infrastructure
+    Authentication          : WPA2-Personal
+    Encryption              : CCMP 
+    BSSID 1                 : 94:91:7f:32:b0:03
+         Signal             : 40%  
+         Radio type         : 802.11ac
+         Channel            : 36 
+         Basic rates (Mbps) : 6 12 24
+         Other rates (Mbps) : 9 18 36 48 54
+
+SSID 3 : MEO-WiFi
+    Network type            : Infrastructure
+    Authentication          : Open
+    Encryption              : None 
+    BSSID 1                 : cc:19:a8:4f:41:06
+         Signal             : 33%  
+         Radio type         : 802.11ac
+         Channel            : 100 
+         Basic rates (Mbps) : 6 12 24
+         Other rates (Mbps) : 9 18 36 48 54
+    BSSID 2                 : 58:fc:20:84:91:06
+         Signal             : 70%  
+         Radio type         : 802.11ac
+         Channel            : 100 
+         Basic rates (Mbps) : 6 12 24
+         Other rates (Mbps) : 9 18 36 48 54
+    BSSID 3                 : 00:06:91:46:a8:32
+         Signal             : 35%  
+         Radio type         : 802.11n
+         Channel            : 6 
+         Basic rates (Mbps) : 1 2 5.5 11
+         Other rates (Mbps) : 6 9 12 18 24 36 48 54
+    BSSID 4                 : 58:fc:20:84:91:02
+         Signal             : 81%  
+         Radio type         : 802.11n
+         Channel            : 6 
+         Basic rates (Mbps) : 1 2 5.5 11
+         Other rates (Mbps) : 6 9 12 18 24 36 48 54
+
+SSID 4 : MEO-4F4101-5G
+    Network type            : Infrastructure
+    Authentication          : WPA2-Personal
+    Encryption              : CCMP 
+    BSSID 1                 : cc:19:a8:4f:41:01
+         Signal             : 33%  
+         Radio type         : 802.11ac
+         Channel            : 100 
+         Basic rates (Mbps) : 6 12 24
+         Other rates (Mbps) : 9 18 36 48 54
+
+SSID 5 : MEO-849100
+    Network type            : Infrastructure
+    Authentication          : WPA2-Personal
+    Encryption              : CCMP 
+    BSSID 1                 : 58:fc:20:84:91:01
+         Signal             : 70%  
+         Radio type         : 802.11ac
+         Channel            : 100 
+         Basic rates (Mbps) : 6 12 24
+         Other rates (Mbps) : 9 18 36 48 54
+    BSSID 2                 : 58:fc:20:84:91:00
+         Signal             : 81%  
+         Radio type         : 802.11n
+         Channel            : 6 
+         Basic rates (Mbps) : 1 2 5.5 11
+         Other rates (Mbps) : 6 9 12 18 24 36 48 54
+
+SSID 6 : Vodafone-0EA450 2.4GHz
+    Network type            : Infrastructure
+    Authentication          : WPA2-Personal
+    Encryption              : CCMP 
+    BSSID 1                 : a4:be:2b:0e:a4:58
+         Signal             : 35%  
+         Radio type         : 802.11n
+         Channel            : 4 
+         Basic rates (Mbps) : 1 2 5.5 11
+         Other rates (Mbps) : 6 9 12 18 24 36 48 54
+
+SSID 7 : Vodafone-E83A1A
+    Network type            : Infrastructure
+    Authentication          : WPA2-Personal
+    Encryption              : CCMP 
+    BSSID 1                 : 4c:f5:5b:e8:3a:20
+         Signal             : 29%  
+         Radio type         : 802.11n
+         Channel            : 6 
+         Basic rates (Mbps) : 1 2 5.5 11
+         Other rates (Mbps) : 6 9 12 18 24 36 48 54
+
+SSID 8 : Vodafone-AE1BF7
+    Network type            : Infrastructure
+    Authentication          : WPA2-Personal
+    Encryption              : CCMP 
+    BSSID 1                 : 44:d4:53:ae:1b:f4
+         Signal             : 31%  
+         Radio type         : 802.11n
+         Channel            : 11 
+         Basic rates (Mbps) : 1 2 5.5 11
+         Other rates (Mbps) : 6 9 12 18 24 36 48 54
+
+SSID 9 : NOS-AFFE
+    Network type            : Infrastructure
+    Authentication          : WPA2-Personal
+    Encryption              : CCMP 
+    BSSID 1                 : 94:91:7f:32:af:fe
+         Signal             : 83%  
+         Radio type         : 802.11n
+         Channel            : 6 
+         Basic rates (Mbps) : 6 12 24
+         Other rates (Mbps) : 9 18 36 48 54
+
+SSID 10 : Camarote
+    Network type            : Infrastructure
+    Authentication          : WPA2-Personal
+    Encryption              : CCMP 
+    BSSID 1                 : f4:79:60:a7:3c:8c
+         Signal             : 33%  
+         Radio type         : 802.11n
+         Channel            : 11 
+         Basic rates (Mbps) : 1 2 5.5 11
+         Other rates (Mbps) : 6 9 12 18 24 36 48 54
+
+SSID 11 : Barraco2c_5
+    Network type            : Infrastructure
+    Authentication          : WPA2-Personal
+    Encryption              : CCMP 
+    BSSID 1                 : 48:7b:6b:83:4d:08
+         Signal             : 83%  
+         Radio type         : 802.11ac
+         Channel            : 100 
+         Basic rates (Mbps) : 6 12 24
+         Other rates (Mbps) : 9 18 36 48 54

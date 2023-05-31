@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Network Information</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    
+    <style>
+        #chartContainer {
+          display: flex;
+          justify-content: center;
+        }
+      </style>
+</head>
+<body>
+    <h1>Network Information</h1>
+    <table class="w3-table-all w3-striped">
+        <tr class="w3-blue">
+            <th>SSID</th>
+            <th> Nome </th>
+            <th>Network type</th>
+            <th>Authentication</th>
+            <th>Encryption</th>
+            <th>APs</th>
+        </tr>
+        {% for key, value in info.items() %}
+        <tr>
+            <td>{{ key }}</td>
+            <td>{{ value["name"] }}</td>
+            <td>{{ value["Network type"] }}</td>
+            <td>{{ value["Authentication"] }}</td>
+            <td>{{ value["Encryption"] }}</td>
+            <td>
+              <button class="w3-button w3-round-large w3-aqua"><a href="{{ url_for('aps', ssid=key|urlencode) }}">APs Info</a></button></td>
+
+            <!--<td><a href="{{ url_for('aps', ssid=key|replace(' ', '')) }}">APs Info</a></td>-->
+        </tr>
+        {% endfor %}
+    </table>
+<br>
+    <hr>
+    <br>
+    <div id="chartContainer">
+        <canvas id="myChart" style="width:100%;max-width:600px"></canvas>
+      </div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+<script>
+var xValues = {{ x | tojson }};
+var yValues = {{ y | tojson }};
+var barColors = ["red", "green","blue","orange","brown"];
+
+new Chart("myChart", {
+  type: "bar",
+  data: {
+    labels: xValues,
+    datasets: [{
+      backgroundColor: barColors,
+      data: yValues
+    }]
+  },
+  options: {
+    scales: {
+        yAxes: [{
+            display: true,
+            ticks: {
+                suggestedMin: 0, 
+                   // minimum will be 0, unless there is a lower value.
+                // OR //
+                suggestedMax: 100
+                //beginAtZero: true   // minimum value will be 0.
+            }
+        }]
+    },
+    legend: {display: false},
+    title: {
+      display: true,
+      text: "Top 5 Redes com melhor sinal"
+    }
+  }
+});
+</script>
+</body>
+</html>

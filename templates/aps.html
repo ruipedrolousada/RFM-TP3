@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>APs Information</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        #chartContainer {
+          display: flex;
+          justify-content: center;
+        }
+      </style>
+</head>
+<body>
+
+    <h1 class="w3-padding">APs Information for {{ aps_info['name'] }}  <button class="w3-padding w3-button w3-round-large w3-white w3-display-topright"><a href="/"><i class="fa fa-home"></i></a></button> </h1>
+
+    <table class="w3-table-all w3-striped">
+        <tr class="w3-blue">
+            <th>BSSID</th>
+            <th>BSSID MAC</th>
+            <th>Signal</th>
+            <th>Radio type</th>
+            <th>Channel</th>
+            <th>Basic rates (Mbps)</th>
+            <th>Other rates (Mbps)</th>
+        </tr>
+        {% for k, ap_info in aps_info.items() %}
+            {% if k != 'name' and k != 'Network type' and k != 'Authentication' and k != 'Encryption' %}
+                <tr>
+                    <td>{{ k }}</td>
+                    <td>{{ ap_info['id'] }}</td>
+                    <td>{{ ap_info['Signal'] }}</td>
+                    <td>{{ ap_info['Radio type'] }}</td>
+                    <td>{{ ap_info['Channel'] }}</td>
+                    <td>{{ ap_info['Basic rates (Mbps)'] }}</td>
+                    <td>{{ ap_info['Other rates (Mbps)'] }}</td>
+                </tr>
+            {% endif %}
+        {% endfor %}
+    </table>
+    <br>
+    <hr>
+    <br>
+    <div id="chartContainer">
+        <canvas id="myChart" style="width:100%;max-width:600px"></canvas>
+      </div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+<script>
+var xValues = {{ x | tojson }};
+var yValues = {{ y | tojson }};
+var barColors = ["red", "green","blue","orange","brown"];
+
+new Chart("myChart", {
+  type: "bar",
+  data: {
+    labels: xValues,
+    datasets: [{
+      backgroundColor: barColors,
+      data: yValues
+    }]
+  },
+  options: {
+    scales: {
+        yAxes: [{
+            display: true,
+            ticks: {
+                suggestedMin: 0, 
+                   // minimum will be 0, unless there is a lower value.
+                // OR //
+                suggestedMax: 100
+                //beginAtZero: true   // minimum value will be 0.
+            }
+        }]
+    },
+    legend: {display: false},
+    title: {
+      display: true,
+      text: "Access Points Signal"
+    }
+  }
+});
+</script>
+</body>
+</html>
